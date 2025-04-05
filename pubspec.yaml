@@ -1,5 +1,5 @@
 name: flutter_navigation
-description: "A Flutter package to make building navigation stacks easier."
+description: "A Flutter package that provides custom page transitions and navigation utilities."
 version: 0.0.1
 homepage:
 
