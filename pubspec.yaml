@@ -1,7 +1,7 @@
 name: flutter_navigation
 description: "A Flutter package that provides custom page transitions and navigation utilities."
 version: 0.0.1
-homepage:
+homepage: https://github.com/ratiebareeng/flutter_navigation
 
 environment:
   sdk: ^3.7.2
