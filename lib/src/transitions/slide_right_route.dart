@@ -39,13 +39,13 @@ class SlideRightRoute extends PageRouteBuilder {
   /// [navigatorKey] is the key associated with the Navigator.
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  static Future<void> navigate(
+  static Future<T?> navigate<T>(
     GlobalKey<NavigatorState> navigatorKey,
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
   }) {
     return navigatorKey.currentState!.push(
-      SlideRightRoute(page: page, duration: duration),
+      SlideRightRoute(page: page, duration: duration) as Route<T>,
     );
   }
 

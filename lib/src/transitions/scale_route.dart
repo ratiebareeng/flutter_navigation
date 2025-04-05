@@ -38,7 +38,7 @@ class ScaleRoute extends PageRouteBuilder {
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
   /// [alignment] is the alignment for the scale animation.
-  static Future<T?> navigateTo<T>(
+  static Future<T?> navigate<T>(
     GlobalKey<NavigatorState> navigatorKey,
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
@@ -56,7 +56,7 @@ class ScaleRoute extends PageRouteBuilder {
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
   /// [alignment] is the alignment for the scale animation.
-  static Future<T?> replaceTo<T>(
+  static Future<T?> replace<T>(
     GlobalKey<NavigatorState> navigatorKey,
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),

@@ -28,7 +28,7 @@ class FadeRoute extends PageRouteBuilder {
   /// [navigatorKey] is the key associated with the Navigator.
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  static Future<T?> navigateTo<T>(
+  static Future<T?> navigate<T>(
     GlobalKey<NavigatorState> navigatorKey,
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
@@ -43,7 +43,7 @@ class FadeRoute extends PageRouteBuilder {
   /// [navigatorKey] is the key associated with the Navigator.
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  static Future<T?> replaceTo<T>(
+  static Future<T?> replace<T>(
     GlobalKey<NavigatorState> navigatorKey,
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
