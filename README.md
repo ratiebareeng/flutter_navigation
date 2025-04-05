@@ -128,7 +128,7 @@ navigationService.slideRight(
 
 ## Examples
 
-Check the [example](./example) folder for a complete demo app.
+Check the [example](./example/lib/main.dart) folder for a complete demo app.
 
 ## License
 
