@@ -19,7 +19,7 @@ class NavigationService {
   ///
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  Future<T?> fadeTo<T>(
+  Future<T?> fade<T>(
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
   }) {
@@ -76,7 +76,7 @@ class NavigationService {
   /// Replaces the current route with the specified route.
   ///
   /// [route] is the route to navigate to.
-  Future<T?> replaceTo<T>(Route<T> route) {
+  Future<T?> replace<T>(Route<T> route) {
     return navigatorKey.currentState!.pushReplacement(route);
   }
 
@@ -96,7 +96,7 @@ class NavigationService {
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
   /// [alignment] is the alignment for the scale animation.
-  Future<T?> scaleTo<T>(
+  Future<T?> scale<T>(
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
     Alignment alignment = Alignment.center,
@@ -113,7 +113,7 @@ class NavigationService {
   ///
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  Future<T?> slideLeftTo<T>(
+  Future<T?> slideLeft<T>(
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
   }) {
@@ -124,7 +124,7 @@ class NavigationService {
   ///
   /// [page] is the widget to navigate to.
   /// [duration] is the duration of the transition animation.
-  Future<T?> slideRightTo<T>(
+  Future<T?> slideRight<T>(
     Widget page, {
     Duration duration = const Duration(milliseconds: 300),
   }) {
