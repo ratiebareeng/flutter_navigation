@@ -54,17 +54,17 @@ The simplest way to navigate is by using the NavigationService:
 
 ```dart
 // Navigate to a new page with a slide right transition
-navigationService.slideRightTo(
+navigationService.slideRight(
   YourPage(),
 );
 
 // Navigate with a fade transition
-navigationService.fadeTo(
+navigationService.fade(
   YourPage(),
 );
 
 // Navigate with a scale transition
-navigationService.scaleTo(
+navigationService.scale(
   YourPage(),
   alignment: Alignment.bottomCenter,
 );
@@ -84,13 +84,13 @@ You can also use the static methods directly with the NavigatorKey:
 
 ```dart
 // Navigate to a new page with a slide right transition
-SlideRightRoute.navigateTo(
+SlideRightRoute.navigate(
   navigationService.navigatorKey,
   YourPage(),
 );
 
 // Replace the current page
-SlideLeftRoute.replaceTo(
+SlideLeftRoute.replace(
   navigationService.navigatorKey,
   YourPage(),
 );
@@ -113,7 +113,7 @@ navigationService.popUntil((route) => route.isFirst);
 You can customize transition durations:
 
 ```dart
-navigationService.slideRightTo(
+navigationService.slideRight(
   YourPage(),
   duration: Duration(milliseconds: 500), // Default is 300ms
 );
